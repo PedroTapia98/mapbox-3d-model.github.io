@@ -9,6 +9,9 @@ const map = new mapboxgl.Map({
     bearing: -20,
     antialias: true
 });
+new mapboxgl.Marker()
+  .setLngLat([-99.462646, 19.215576])
+  .addTo(map);
 
 const modelOrigin = [-99.462646, 19.215576];
 const modelAltitude = 0;
