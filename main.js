@@ -1,8 +1,8 @@
-mapboxgl.accessToken = 'TU_TOKEN_AQUI';
+mapboxgl.accessToken = 'pk.eyJ1IjoicGVkcm90YXAiLCJhIjoiY21uZGRnNnA1MWY2NDJxb243aHBtODd1dSJ9.IKw80JiSo-v4NJD8ZD_WNA';
 
 const map = new mapboxgl.Map({
     container: 'map',
-    style: 'mapbox://styles/mapbox/standard',
+    style: 'mapbox://styles/pedrotap/cmndew1aq000z01qq3u62ez82',
     center: [-99.1332, 19.4326],
     zoom: 18,
     pitch: 60,
