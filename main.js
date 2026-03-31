@@ -46,7 +46,7 @@ map.on('style.load', () => {
 
             const loader = new THREE.GLTFLoader();
 
-            loader.load('modelo.glb', (gltf) => {
+            loader.load('EO.glb', (gltf) => {
                 this.scene.add(gltf.scene);
             });
 
