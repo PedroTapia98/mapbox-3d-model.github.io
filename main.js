@@ -3,14 +3,14 @@ mapboxgl.accessToken = 'pk.eyJ1IjoicGVkcm90YXAiLCJhIjoiY21uZGRnNnA1MWY2NDJxb243a
 const map = new mapboxgl.Map({
     container: 'map',
     style: 'mapbox://styles/pedrotap/cmndew1aq000z01qq3u62ez82',
-    center: [-99.1332, 19.4326],
+    center: [-99.462646, 19.215576],
     zoom: 18,
     pitch: 60,
     bearing: -20,
     antialias: true
 });
 
-const modelOrigin = [-99.1332, 19.4326];
+const modelOrigin = [-99.462646, 19.215576];
 const modelAltitude = 0;
 const modelRotate = [Math.PI / 2, 0, 0];
 
