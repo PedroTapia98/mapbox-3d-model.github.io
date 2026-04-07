@@ -15,7 +15,7 @@ new mapboxgl.Marker()
 
 const modelOrigin = [-99.462670, 19.215605];
 const modelAltitude = 0;
-const modelRotate = [Math.PI / 2, 0, -0.5];
+const modelRotate = [Math.PI / 2, 0, 0];
 
 const modelAsMercatorCoordinate = mapboxgl.MercatorCoordinate.fromLngLat(
     modelOrigin,
@@ -29,7 +29,7 @@ const modelTransform = {
     rotateX: modelRotate[0],
     rotateY: modelRotate[1],
     rotateZ: modelRotate[2],
-    scale: modelAsMercatorCoordinate.meterInMercatorCoordinateUnits() * 0.05
+    scale: modelAsMercatorCoordinate.meterInMercatorCoordinateUnits() * 0.001
 };
 
 map.on('style.load', () => {
