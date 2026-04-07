@@ -29,7 +29,7 @@ const modelTransform = {
     rotateX: modelRotate[0],
     rotateY: modelRotate[1],
     rotateZ: modelRotate[2],
-    scale: modelAsMercatorCoordinate.meterInMercatorCoordinateUnits() * 0.01
+    scale: modelAsMercatorCoordinate.meterInMercatorCoordinateUnits() * 0.001
 };
 
 map.on('style.load', () => {
