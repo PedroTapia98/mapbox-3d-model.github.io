@@ -15,7 +15,7 @@ new mapboxgl.Marker()
 
 const modelOrigin = [-99.462670, 19.215605];
 const modelAltitude = 0;
-const modelRotate = [Math.PI / 2, 0.2, 0];
+const modelRotate = [Math.PI / 2, 0.4, 0];
 
 const modelAsMercatorCoordinate = mapboxgl.MercatorCoordinate.fromLngLat(
     modelOrigin,
