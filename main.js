@@ -3,17 +3,17 @@ mapboxgl.accessToken = 'pk.eyJ1IjoicGVkcm90YXAiLCJhIjoiY21uZGRnNnA1MWY2NDJxb243a
 const map = new mapboxgl.Map({
     container: 'map',
     style: 'mapbox://styles/pedrotap/cmndew1aq000z01qq3u62ez82',
-    center: [-99.462646, 19.215576],
+    center: [-99.462670, 19.215605],
     zoom: 18,
     pitch: 60,
     bearing: -20,
     antialias: true
 });
 new mapboxgl.Marker()
-  .setLngLat([-99.462646, 19.215576])
+  .setLngLat([-99.462670, 19.215605])
   .addTo(map);
 
-const modelOrigin = [-99.462646, 19.215576];
+const modelOrigin = [-99.462670, 19.215605];
 const modelAltitude = 0;
 const modelRotate = [Math.PI / 2, 0, 0];
 
