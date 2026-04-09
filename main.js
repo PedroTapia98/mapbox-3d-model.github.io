@@ -94,8 +94,8 @@ map.on('style.load', () => {
                         modelTransform.scale
                     )
                 )
-                .multiply(rotationX)
-                .multiply(rotationY)
+                .multiply(rotationX),
+                .multiply(rotationY),
                 .multiply(rotationZ);
 
             this.camera.projectionMatrix = m.multiply(l);
