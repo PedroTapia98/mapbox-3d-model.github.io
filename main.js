@@ -13,7 +13,7 @@ new mapboxgl.Marker()
   .setLngLat([-99.462670, 19.215605])
   .addTo(map);
 
-const modelOrigin = [-99.462670, 19.215605];
+const modelOrigin = [-99.462670, 19.215605 + 0.000001];
 const modelAltitude = 0;
 const modelRotate = [Math.PI / 2, 0, -0.5];
 
@@ -83,8 +83,8 @@ map.on('style.load', () => {
 
             const l = new THREE.Matrix4()
                 .makeTranslation(
-                    modelTransform.translateX + 0.00001,
-                    modelTransform.translateY + 0.00001,
+                    modelTransform.translateX,
+                    modelTransform.translateY,
                     modelTransform.translateZ
                 )
                 .scale(
