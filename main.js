@@ -83,8 +83,8 @@ map.on('style.load', () => {
 
             const l = new THREE.Matrix4()
                 .makeTranslation(
-                    modelTransform.translateX,
-                    modelTransform.translateY,
+                    modelTransform.translateX + 0.00001,
+                    modelTransform.translateY + 0.00001,
                     modelTransform.translateZ
                 )
                 .scale(
