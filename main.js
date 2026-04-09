@@ -13,7 +13,7 @@ new mapboxgl.Marker()
   .setLngLat([-99.462670, 19.215605])
   .addTo(map);
 
-const modelOrigin = [-99.462670, 19.215605 + 0.000001];
+const modelOrigin = [-99.462670+ 0.000001, 19.215605];
 const modelAltitude = 0;
 const modelRotate = [Math.PI / 2, 0, -0.5];
 
