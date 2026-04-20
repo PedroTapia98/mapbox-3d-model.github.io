@@ -82,27 +82,21 @@ map.on('style.load', () => {
             const m = new THREE.Matrix4().fromArray(matrix);
 
             const l = new THREE.Matrix4()
-                .makeTranslation(
-                    modelTransform.translateX,
-                    modelTransform.translateY,
-                    modelTransform.translateZ
+            .makeTranslation(
+                modelTransform.translateX,
+                modelTransform.translateY,
+                modelTransform.translateZ
+            )
+            .multiply(rotationZ)
+            .multiply(rotationY)
+            .multiply(rotationX)
+            .scale(
+                new THREE.Vector3(
+                    modelTransform.scale,
+                    -modelTransform.scale,
+                    modelTransform.scale
                 )
-                .scale(
-                    new THREE.Vector3(
-                        modelTransform.scale,
-                        -modelTransform.scale,
-                        modelTransform.scale
-                    )
-                )
-                .multiply(rotationX),
-                .multiply(rotationY),
-                .multiply(rotationZ);
-
-            this.camera.projectionMatrix = m.multiply(l);
-
-            this.renderer.resetState();
-            this.renderer.render(this.scene, this.camera);
-            map.triggerRepaint();
+            );
         }
     };
 
